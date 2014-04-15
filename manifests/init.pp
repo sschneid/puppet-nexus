@@ -12,7 +12,8 @@ class nexus (
 
   apache::vhost::proxy { 'nexus-proxy':
     serveraliases => 'nexus-proxy',
-    port          => 80,
+    port          => 443,
+    ssl           => true,
     dest          => 'http://localhost:8081',
   }
 
