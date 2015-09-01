@@ -1,5 +1,5 @@
 class nexus (
-  $source  = 'http://www.sonatype.org/downloads',
+  $source  = 'http://download.sonatype.com/nexus/oss',
   $dest    = '/var/www',
   $version = 'latest',
 ) {
