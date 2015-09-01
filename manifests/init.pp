@@ -22,7 +22,7 @@ class nexus (
   }
 
   exec { 'nexus-download':
-    command => "curl -v --progress-bar -o '/tmp/nexus-${version}-bundle.tar.gz' '${source_url}'",
+    command => "curl -v -L --progress-bar -o '/tmp/nexus-${version}-bundle.tar.gz' '${source_url}'",
     cwd     => '/tmp',
     path    => [ '/bin', '/usr/bin' ],
     creates => "/tmp/nexus-${version}-bundle.tar.gz",
