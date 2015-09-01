@@ -1,7 +1,7 @@
 class nexus (
-  $source  = 'http://download.sonatype.com/nexus/oss',
+  $source  = 'http://www.sonatype.org/downloads',
   $dest    = '/var/www',
-  $version = '2.6.2-01'
+  $version = 'latest',
 ) {
   $source_url = "${source}/nexus-${version}-bundle.tar.gz"
 
