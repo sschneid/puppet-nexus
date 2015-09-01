@@ -13,7 +13,7 @@ class nexus (
   apache::vhost::proxy { 'nexus-proxy':
     serveraliases => 'nexus-proxy',
     port          => 80,
-    dest          => 'http://localhost:8081',
+    dest          => 'http://localhost:8081/nexus/',
   }
 
   file { $dest:
